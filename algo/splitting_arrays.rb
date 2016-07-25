@@ -2,6 +2,13 @@
 
 def split_array(array, array_size)
 
+  new_array = []
+  until array.empty?
+    new_array << array.pop(array_size)
+  end
+
+  return new_array.reverse
+
 end
 
 # Driver code - don't touch anything below this line.
